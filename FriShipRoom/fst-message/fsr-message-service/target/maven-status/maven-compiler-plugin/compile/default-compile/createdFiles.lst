@@ -1,0 +1,3 @@
+com\fsr\service\impl\MessageServiceImpl.class
+com\fsr\datatransfer\MessageDataTransfer.class
+com\fsr\service\MessageService.class

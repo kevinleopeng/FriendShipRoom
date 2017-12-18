@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fsr.repository.mybatis.CollectRentMapper">
+
+    <resultMap id="collectRent" type="com.fsr.domain.CollectRent">
+        <id property="id" column="id"/>
+        <result property="type" column="type"/>
+        <result property="homeId" column="homeId"/>
+        <result property="homeAddress" column="homeAddress"/>
+        <result property="roomId" column="roomId"/>
+        <result property="roomAddress" column="roomAddress"/>
+        <result property="renterId" column="renterId"/>
+        <result property="renterName" column="renterName"/>
+        <result property="landlordId" column="landlordId"/>
+        <result property="landlordName" column="landlordName"/>
+        <result property="payDate" column="payDate"/>
+        <result property="countDown" column="countDown"/>
+        <result property="overDue" column="overDue"/>
+        <result property="renterPhoneNum" column="renterPhoneNum"/>
+        <result property="landlordPhoneNum" column="landlordPhoneNum"/>
+        <result property="isPay" column="isPay"/>
+        <result property="actualPayDate" column="actualPayDate"/>
+        <result property="status" column="status"/>
+        <result property="amount" column="amount"/>
+    </resultMap>
+
+    <select id="getCollectRentContractsByPageAndType" resultMap="collectRent">
+        SELECT homeAddress, roomAddress, landlordName, renterName, payDate, countDown, landlordPhoneNum,
+         renterPhoneNum, isPay, status, amount
+        FROM
+          cr_collectrent where type = #{type}
+        LIMIT #{offset}, #{perPage}
+    </select>
+
+    <select id="selectCountByType" resultType="long">
+        SELECT
+        COUNT(*)
+        FROM
+        cr_collectrent where type = #{type}
+    </select>
+
+    <select id="getCollectRentCountByTypeAndPayDate" resultType="long">
+        SELECT
+        count(*)
+        FROM
+        cr_collectrent where type = #{type} and payDate = #{payDate}
+        <choose>
+            <when test="type==2">
+                and homeId = #{id}
+            </when>
+            <otherwise>
+                and roomId = #{id}
+            </otherwise>
+        </choose>
+    </select>
+
+    <select id="insertCollectRent" resultType="integer">
+        INSERT INTO
+        cr_collectrent (type, homeId, homeAddress, roomId, roomAddress, renterId, renterName, landlordId, landlordName, payDate, overDue, renterPhoneNum, landlordPhoneNum, isPay, actualPayDate, status, amount)
+        VALUES
+        (#{type}, #{homeId}, #{homeAddress}, #{roomId}, #{roomAddress}, #{renterId}, #{renterName}, #{landlordId}, #{landlordName}, #{payDate}, #{overDue}, #{renterPhoneNum}, #{landlordPhoneNum}, #{isPay}, #{actualPayDate}, #{status}, #{amount})
+    </select>
+</mapper>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fsr.repository.mybatis.RenterMapper">
+
+    <resultMap id="renter" type="com.fsr.domain.Renter">
+        <id property="id" column="id"/>
+        <result property="type" column="type"/>
+        <result property="name" column="name"/>
+        <result property="sex" column="sex"/>
+        <result property="age" column="age"/>
+        <result property="phoneNum" column="phoneNum"/>
+        <result property="otherPhoneNum" column="otherPhoneNum"/>
+        <result property="roomId" column="roomId"/>
+        <result property="homeId" column="homeId"/>
+        <result property="roomAddress" column="roomAddress"/>
+        <result property="homeAddress" column="homeAddress"/>
+        <result property="workAddress" column="workAddress"/>
+        <result property="workCompany" column="workCompany"/>
+        <result property="companyNum" column="companyNum"/>
+        <result property="industry" column="industry"/>
+        <result property="renterPics" column="renterPics"/>
+    </resultMap>
+
+    <select id="getRentersByType" resultMap="renter">
+        SELECT
+          id, name, phoneNum
+        FROM
+          cr_renter
+        where type = #{type}
+    </select>
+
+    <select id="getRentersByPage" resultMap="renter">
+        SELECT
+        *
+        FROM
+        cr_renter
+        LIMIT #{offset}, #{perPage}
+    </select>
+
+    <select id="selectCount" resultType="long">
+        SELECT
+        COUNT(*)
+        FROM
+        cr_renter
+    </select>
+
+    <select id="insertRenter" resultType="integer">
+        INSERT INTO
+        cr_renter (type, name, sex, age, phoneNum, otherPhoneNum, workAddress, workCompany, companyNum, industry, renterPics)
+        VALUES
+        (#{type}, #{name}, #{sex}, #{age}, #{phoneNum}, #{otherPhoneNum}, #{workAddress}, #{workCompany}, #{companyNum}, #{industry}, #{renterPics})
+    </select>
+</mapper>

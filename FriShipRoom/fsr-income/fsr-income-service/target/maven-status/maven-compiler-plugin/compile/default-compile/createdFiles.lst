@@ -1,0 +1,3 @@
+com\fsr\service\impl\IncomeServiceImpl.class
+com\fsr\service\IncomeService.class
+com\fsr\datatransfer\IncomeDataTransfer.class

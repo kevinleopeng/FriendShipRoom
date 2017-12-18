@@ -1,0 +1,4 @@
+com\fsr\service\CollectRentService.class
+com\fsr\vo\TemplateVO.class
+com\fsr\service\impl\CollectRentServiceImpl.class
+com\fsr\datatransfer\CollectRentDataTransfer.class

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FriShipRoom.iml" filepath="$PROJECT_DIR$/FriShipRoom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-category/fsr-category.iml" filepath="$PROJECT_DIR$/fsr-category/fsr-category.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-category/fsr-category-api/fsr-category-api.iml" filepath="$PROJECT_DIR$/fsr-category/fsr-category-api/fsr-category-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-category/fsr-category-service/fsr-category-service.iml" filepath="$PROJECT_DIR$/fsr-category/fsr-category-service/fsr-category-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-collectrent/fsr-collectrent.iml" filepath="$PROJECT_DIR$/fsr-collectrent/fsr-collectrent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-collectrent/fsr-collectrent-api/fsr-collectrent-api.iml" filepath="$PROJECT_DIR$/fsr-collectrent/fsr-collectrent-api/fsr-collectrent-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-collectrent/fsr-collectrent-service/fsr-collectrent-service.iml" filepath="$PROJECT_DIR$/fsr-collectrent/fsr-collectrent-service/fsr-collectrent-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-common/fsr-common.iml" filepath="$PROJECT_DIR$/fsr-common/fsr-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-contract/fsr-contract.iml" filepath="$PROJECT_DIR$/fsr-contract/fsr-contract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-contract/fsr-contract-api/fsr-contract-api.iml" filepath="$PROJECT_DIR$/fsr-contract/fsr-contract-api/fsr-contract-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-contract/fsr-contract-service/fsr-contract-service.iml" filepath="$PROJECT_DIR$/fsr-contract/fsr-contract-service/fsr-contract-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-dao/fsr-dao.iml" filepath="$PROJECT_DIR$/fsr-dao/fsr-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-expense/fsr-expense.iml" filepath="$PROJECT_DIR$/fsr-expense/fsr-expense.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-expense/fsr-expense-api/fsr-expense-api.iml" filepath="$PROJECT_DIR$/fsr-expense/fsr-expense-api/fsr-expense-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-expense/fsr-expense-service/fsr-expense-service.iml" filepath="$PROJECT_DIR$/fsr-expense/fsr-expense-service/fsr-expense-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-home/fsr-home.iml" filepath="$PROJECT_DIR$/fsr-home/fsr-home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-home/fsr-home-api/fsr-home-api.iml" filepath="$PROJECT_DIR$/fsr-home/fsr-home-api/fsr-home-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-home/fsr-home-service/fsr-home-service.iml" filepath="$PROJECT_DIR$/fsr-home/fsr-home-service/fsr-home-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-income/fsr-income.iml" filepath="$PROJECT_DIR$/fsr-income/fsr-income.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-income/fsr-income-api/fsr-income-api.iml" filepath="$PROJECT_DIR$/fsr-income/fsr-income-api/fsr-income-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-income/fsr-income-service/fsr-income-service.iml" filepath="$PROJECT_DIR$/fsr-income/fsr-income-service/fsr-income-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-landlord/fsr-landlord.iml" filepath="$PROJECT_DIR$/fsr-landlord/fsr-landlord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-landlord/fsr-landlord-api/fsr-landlord-api.iml" filepath="$PROJECT_DIR$/fsr-landlord/fsr-landlord-api/fsr-landlord-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-landlord/fsr-landlord-service/fsr-landlord-service.iml" filepath="$PROJECT_DIR$/fsr-landlord/fsr-landlord-service/fsr-landlord-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fst-message/fsr-message-api/fsr-message-api.iml" filepath="$PROJECT_DIR$/fst-message/fsr-message-api/fsr-message-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fst-message/fsr-message-service/fsr-message-service.iml" filepath="$PROJECT_DIR$/fst-message/fsr-message-service/fsr-message-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-quartz/fsr-quartz.iml" filepath="$PROJECT_DIR$/fsr-quartz/fsr-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-renter/fsr-renter.iml" filepath="$PROJECT_DIR$/fsr-renter/fsr-renter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-renter/fsr-renter-api/fsr-renter-api.iml" filepath="$PROJECT_DIR$/fsr-renter/fsr-renter-api/fsr-renter-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-renter/fsr-renter-service/fsr-renter-service.iml" filepath="$PROJECT_DIR$/fsr-renter/fsr-renter-service/fsr-renter-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-room/fsr-room.iml" filepath="$PROJECT_DIR$/fsr-room/fsr-room.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-room/fsr-room-api/fsr-room-api.iml" filepath="$PROJECT_DIR$/fsr-room/fsr-room-api/fsr-room-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-room/fsr-room-service/fsr-room-service.iml" filepath="$PROJECT_DIR$/fsr-room/fsr-room-service/fsr-room-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-service/fsr-service.iml" filepath="$PROJECT_DIR$/fsr-service/fsr-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-web/fsr-web.iml" filepath="$PROJECT_DIR$/fsr-web/fsr-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fst-message/fst-message.iml" filepath="$PROJECT_DIR$/fst-message/fst-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fsr-expense/ss.iml" filepath="$PROJECT_DIR$/fsr-expense/ss.iml" />
+    </modules>
+  </component>
+</project>

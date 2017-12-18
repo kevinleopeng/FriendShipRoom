@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-category" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-category/fsr-category-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-category/fsr-category-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-collectrent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-collectrent/fsr-collectrent-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-collectrent/fsr-collectrent-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-collectrent/fsr-collectrent-service/src/main/resources/templates/houserent.vm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-contract" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-contract/fsr-contract-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-contract/fsr-contract-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-expense" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-expense/fsr-expense-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-expense/fsr-expense-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-home" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-home/fsr-home-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-home/fsr-home-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-income" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-income/fsr-income-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-income/fsr-income-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-landlord" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-landlord/fsr-landlord-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-landlord/fsr-landlord-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-quartz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-renter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-renter/fsr-renter-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-renter/fsr-renter-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-room" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-room/fsr-room-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-room/fsr-room-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fsr-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fst-message" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fst-message/fsr-message-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fst-message/fsr-message-service" charset="UTF-8" />
+  </component>
+</project>

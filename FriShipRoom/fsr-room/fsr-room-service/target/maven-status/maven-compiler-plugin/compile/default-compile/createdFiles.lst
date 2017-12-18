@@ -1,0 +1,3 @@
+com\fsr\service\impl\RoomServiceImpl.class
+com\fsr\service\RoomService.class
+com\fsr\datatransfer\RoomDataTransfer.class

@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:11:03:57 +0800] "GET /fsr.web/renter/getRentersByType?type=1 HTTP/1.1" 200 327 http-bio-8080-exec-7 3383
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:11:03:57 +0800] "GET /fsr.web/home HTTP/1.1" 200 3084 http-bio-8080-exec-6 3383
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:11:03:57 +0800] "GET /fsr.web/contract/getHouseContract?page=1&pageSize=20 HTTP/1.1" 200 4091 http-bio-8080-exec-5 3414
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:11:04:35 +0800] "GET /fsr.web/home HTTP/1.1" 200 3084 http-bio-8080-exec-2 45
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:11:04:35 +0800] "GET /fsr.web/renter/getRentersByType?type=2 HTTP/1.1" 200 6332 http-bio-8080-exec-4 62
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:11:04:35 +0800] "GET /fsr.web/contract/getRoomContract?page=1&pageSize=20 HTTP/1.1" 200 11642 http-bio-8080-exec-1 228
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:11:08:13 +0800] "GET /fsr.web/collectrent/getCollectRentByType?page=1&pageSize=20&type=1 HTTP/1.1" 200 3247 http-bio-8080-exec-5 89
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:11:08:54 +0800] "GET /fsr.web/collectrent/refreshPayDayAndNotify HTTP/1.1" 200 69 http-bio-8080-exec-10 38169
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:11:08:54 +0800] "GET /fsr.web/collectrent/getCollectRentByType?page=1&pageSize=20&type=1 HTTP/1.1" 200 3639 http-bio-8080-exec-10 72

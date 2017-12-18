@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>com.friendshiproom</artifactId>
+        <groupId>friendshiproom-sys</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>fsr.web</artifactId>
+    <packaging>war</packaging>
+    <name>fsr-web</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <!-- 依赖Modules -->
+        <dependency>
+            <groupId>friendshiproom-sys</groupId>
+            <artifactId>fsr.message.api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>friendshiproom-sys</groupId>
+            <artifactId>fsr.quartz</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>friendshiproom-sys</groupId>
+            <artifactId>fsr.expense.api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>friendshiproom-sys</groupId>
+            <artifactId>fsr.category.api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>friendshiproom-sys</groupId>
+            <artifactId>fsr.home.api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>friendshiproom-sys</groupId>
+            <artifactId>fsr.income.api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>friendshiproom-sys</groupId>
+            <artifactId>fsr.contract.api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>friendshiproom-sys</groupId>
+            <artifactId>fsr.renter.api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>friendshiproom-sys</groupId>
+            <artifactId>fsr.room.api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>friendshiproom-sys</groupId>
+            <artifactId>fsr.collectrent.api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>friendshiproom-sys</groupId>
+            <artifactId>fsr.landlord.api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- WEB begin -->
+
+       <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+
+
+        <!-- WEB end -->
+    </dependencies>
+    <build>
+        <finalName>fsr-web</finalName>
+    </build>
+</project>

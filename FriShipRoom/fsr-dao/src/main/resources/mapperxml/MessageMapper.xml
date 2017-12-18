@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fsr.repository.mybatis.MessageMapper">
+
+    <resultMap id="message" type="com.fsr.domain.Message">
+        <id property="id" column="id"/>
+        <result property="message" column="message"/>
+        <result property="addTime" column="addTime"/>
+        <result property="modifyTime" column="modifyTime"/>
+    </resultMap>
+
+    <select id="getMessagesByPage" resultMap="message">
+        SELECT
+          id, message, addTime, modifyTime
+        FROM
+          cr_message
+        LIMIT #{offset}, #{perPage}
+    </select>
+
+    <select id="selectCount" resultType="long">
+        SELECT
+        COUNT(*)
+        FROM
+        cr_message
+    </select>
+
+    <select id="insertMessage" resultType="integer">
+        INSERT INTO
+        cr_message (message, addTime, modifyTime)
+        VALUES
+        (#{message}, #{addTime}, #{modifyTime})
+    </select>
+
+    <select id="updateMessage" resultType="integer">
+        update cr_message set message=#{message},addTime=#{addTime},modifyTime=#{modifyTime}
+         where id=#{id}
+    </select>
+</mapper>

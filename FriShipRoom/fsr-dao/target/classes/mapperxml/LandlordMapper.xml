@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fsr.repository.mybatis.LandlordMapper">
+
+    <resultMap id="landlord" type="com.fsr.domain.Landlord">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="address" column="address"/>
+        <result property="sex" column="sex"/>
+        <result property="age" column="age"/>
+        <result property="phoneNum" column="phoneNum"/>
+        <result property="otherPhoneNum" column="otherPhoneNum"/>
+        <result property="bankAccount" column="bankAccount"/>
+        <result property="bank" column="bank"/>
+        <result property="bankAccountName" column="bankAccountName"/>
+        <result property="landlordPics" column="landlordPics"/>
+    </resultMap>
+
+    <select id="getLandlordsByPage" resultMap="landlord">
+        SELECT
+          *
+        FROM
+          cr_landlord
+        LIMIT #{offset}, #{perPage}
+    </select>
+
+    <select id="getAllLandlords" resultMap="landlord">
+        SELECT
+        id, name, phoneNum
+        FROM
+        cr_landlord
+    </select>
+
+    <select id="selectCount" resultType="long">
+        SELECT
+        COUNT(*)
+        FROM
+        cr_landlord
+    </select>
+
+    <select id="insertLandlord" resultType="integer">
+        INSERT INTO
+        cr_landlord (name, address, sex, age, phoneNum, otherPhoneNum, bankAccount, bank, bankAccountName, landlordPics)
+        VALUES
+        (#{name}, #{address}, #{sex}, #{age}, #{phoneNum}, #{otherPhoneNum}, #{bankAccount}, #{bank}, #{bankAccountName}, #{landlordPics})
+    </select>
+</mapper>

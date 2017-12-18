@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fsr.repository.mybatis.ContractMapper">
+
+    <resultMap id="contract" type="com.fsr.domain.Contract">
+        <id property="id" column="id"/>
+        <result property="landlordId" column="landlordId"/>
+        <result property="landlordName" column="landlordName"/>
+        <result property="renterId" column="renterId"/>
+        <result property="renterName" column="renterName"/>
+        <result property="type" column="type"/>
+        <result property="homeId" column="homeId"/>
+        <result property="homeAddress" column="homeAddress"/>
+        <result property="roomId" column="roomId"/>
+        <result property="roomAddress" column="roomAddress"/>
+        <result property="deposit" column="deposit"/>
+        <result property="rental" column="rental"/>
+        <result property="payMode" column="payMode"/>
+        <result property="isIncrement" column="isIncrement"/>
+        <result property="whichYear" column="whichYear"/>
+        <result property="incrementPercent" column="incrementPercent"/>
+        <result property="rentStartTime" column="rentStartTime"/>
+        <result property="rentEndTime" column="rentEndTime"/>
+        <result property="freeRentDays" column="freeRentDays"/>
+        <result property="signDate" column="signDate"/>
+        <result property="rentContract" column="rentContract"/>
+        <result property="nextPayDate" column="nextPayDate"/>
+        <result property="landlordPhoneNum" column="landlordPhoneNum"/>
+        <result property="renterPhoneNum" column="renterPhoneNum"/>
+    </resultMap>
+
+    <select id="getLandlordContractsByPage" resultMap="contract">
+        SELECT
+          id, type, landlordId, landlordName, renterId, renterName, homeId, homeAddress, deposit, rental, payMode,
+          isIncrement, incrementPercent, whichYear, rentStartTime, rentEndTime, freeRentDays, signDate, nextPayDate, landlordPhoneNum, renterPhoneNum
+        FROM
+          cr_contract where type = 2
+        LIMIT #{offset}, #{perPage}
+    </select>
+
+    <select id="selectCountByType" resultType="long">
+        SELECT
+        COUNT(*)
+        FROM
+        cr_contract where type = #{type}
+    </select>
+
+    <select id="getRenterContractsByPage" resultMap="contract">
+        SELECT
+        id, type, landlordId, landlordName, renterId, renterName, homeId, homeAddress, roomId, roomAddress, deposit, rental, payMode,
+        rentStartTime, rentEndTime, signDate, nextPayDate, landlordPhoneNum, renterPhoneNum
+        FROM
+        cr_contract where type = 1
+        LIMIT #{offset}, #{perPage}
+    </select>
+
+    <select id="insertContract" resultType="integer">
+        INSERT INTO
+        cr_contract (landlordId, landlordName, renterId, renterName, type, homeId, homeAddress, roomId, roomAddress, deposit, rental, payMode, isIncrement, whichYear, incrementPercent, rentStartTime, rentEndTime, freeRentDays, signDate, rentContract, nextPayDate, landlordPhoneNum, renterPhoneNum)
+        VALUES
+        (#{landlordId}, #{landlordName}, #{renterId}, #{renterName}, #{type}, #{homeId}, #{homeAddress}, #{roomId}, #{roomAddress}, #{deposit}, #{rental}, #{payMode}, #{isIncrement}, #{whichYear}, #{incrementPercent}, #{rentStartTime}, #{rentEndTime}, #{freeRentDays}, #{signDate}, #{rentContract}, #{nextPayDate}, #{landlordPhoneNum}, #{renterPhoneNum})
+    </select>
+
+    <select id="getRenterContractsByCurrentDateAndNextFiveDate" resultMap="contract">
+        SELECT
+        type, landlordId, landlordName, renterId, renterName, homeId, homeAddress, roomId, roomAddress, deposit, rental, payMode,
+        isIncrement, whichYear, incrementPercent, rentStartTime, rentEndTime, signDate, nextPayDate, landlordPhoneNum, renterPhoneNum
+        FROM
+        cr_contract where nextPayDate <![CDATA[>=]]> #{currentDate} and nextPayDate <![CDATA[<=]]> #{nextFiveDate}
+    </select>
+
+</mapper>

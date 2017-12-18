@@ -1,0 +1,4 @@
+com\fsr\context\SpringContextHolder.class
+com\fsr\service\CategoryService.class
+com\fsr\util\CategoryUtil.class
+com\fsr\service\impl\CategoryServiceImpl.class

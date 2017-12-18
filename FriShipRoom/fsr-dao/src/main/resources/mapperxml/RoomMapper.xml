@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fsr.repository.mybatis.RoomMapper">
+
+    <resultMap id="room" type="com.fsr.domain.Room">
+        <id property="id" column="id"/>
+        <result property="order" column="order"/>
+        <result property="homeId" column="homeId"/>
+        <result property="roomAddress" column="roomAddress"/>
+        <result property="isEmpty" column="isEmpty"/>
+        <result property="emptyDays" column="emptyDays"/>
+        <result property="actualArea" column="actualArea"/>
+        <result property="roomClass" column="roomClass"/>
+        <result property="isBalcony" column="isBalcony"/>
+        <result property="isBathRoom" column="isBathRoom"/>
+        <result property="electricalAppliances" column="electricalAppliances"/>
+        <result property="furnitureAppliances" column="furnitureAppliances"/>
+        <result property="bathroomAppliances" column="bathroomAppliances"/>
+        <result property="wifiAppliances" column="wifiAppliances"/>
+        <result property="roomPics" column="roomPics"/>
+    </resultMap>
+
+    <select id="getRoomsByHomeId" resultMap="room">
+        SELECT
+        id, roomAddress, isEmpty, emptyDays, actualArea, isBalcony, isBathRoom, roomClass
+        FROM
+          cr_room
+        where homeId = #{homeId} and isEmpty = 1
+    </select>
+
+    <select id="getRoomsByPage" resultMap="room">
+        SELECT
+        id, roomAddress, isEmpty, emptyDays, actualArea, isBalcony, isBathRoom
+        FROM
+        cr_room
+        LIMIT #{offset}, #{perPage}
+    </select>
+
+    <select id="selectCount" resultType="long">
+        SELECT
+        COUNT(*)
+        FROM
+        cr_room
+    </select>
+
+    <select id="insertRoom" resultType="integer">
+        INSERT INTO
+        cr_room (homeId, roomAddress, isEmpty, actualArea, roomClass, isBalcony, isBathRoom, roomPics)
+        VALUES
+        (#{homeId}, #{roomAddress}, #{isEmpty}, #{actualArea}, #{roomClass}, #{isBalcony}, #{isBathRoom}, #{roomPics})
+    </select>
+</mapper>

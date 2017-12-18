@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:26:44 +0800] "GET /fsr.web/home HTTP/1.1" 200 3522 http-bio-8080-exec-5 858
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:26:44 +0800] "GET /fsr.web/contract/getRoomContract?page=1&pageSize=20 HTTP/1.1" 200 11638 http-bio-8080-exec-4 879
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:26:44 +0800] "GET /fsr.web/renter/getRentersByType?type=2 HTTP/1.1" 200 7127 http-bio-8080-exec-6 854
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:27:15 +0800] "GET /fsr.web/contract/getRoomContract?page=2&pageSize=20 HTTP/1.1" 200 2377 http-bio-8080-exec-10 55
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:27:21 +0800] "GET /fsr.web/contract/getRoomContract?page=1&pageSize=20 HTTP/1.1" 200 11638 http-bio-8080-exec-3 85
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:28:05 +0800] "GET /fsr.web/contract/getHouseContract?page=1&pageSize=20 HTTP/1.1" 200 4666 http-bio-8080-exec-4 57
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:28:05 +0800] "GET /fsr.web/renter/getRentersByType?type=1 HTTP/1.1" 200 327 http-bio-8080-exec-4 21
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:28:05 +0800] "GET /fsr.web/home HTTP/1.1" 200 3522 http-bio-8080-exec-5 134
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:30:39 +0800] "GET /fsr.web/collectrent/getCollectRentByType?page=1&pageSize=20&type=1 HTTP/1.1" 200 5617 http-bio-8080-exec-2 83
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:34:11 +0800] "GET /fsr.web/collectrent/getCollectRentByType?page=1&pageSize=20&type=2 HTTP/1.1" 200 845 http-bio-8080-exec-1 92
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:36:12 +0800] "GET /fsr.web/collectrent/getCollectRentByType?page=1&pageSize=20&type=1 HTTP/1.1" 200 5617 http-bio-8080-exec-8 41
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:38:31 +0800] "GET /fsr.web/home HTTP/1.1" 200 3522 http-bio-8080-exec-4 28
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:38:31 +0800] "GET /fsr.web/renter/getRentersByType?type=2 HTTP/1.1" 200 7127 http-bio-8080-exec-6 45
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:38:31 +0800] "GET /fsr.web/contract/getRoomContract?page=1&pageSize=20 HTTP/1.1" 200 11638 http-bio-8080-exec-7 56
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:40:43 +0800] "GET /fsr.web/contract/getRoomContract?page=2&pageSize=20 HTTP/1.1" 200 2377 http-bio-8080-exec-3 81
+0:0:0:0:0:0:0:1 - - [29/Oct/2017:13:40:47 +0800] "GET /fsr.web/collectrent/getCollectRentByType?page=1&pageSize=20&type=1 HTTP/1.1" 200 5617 http-bio-8080-exec-3 96
